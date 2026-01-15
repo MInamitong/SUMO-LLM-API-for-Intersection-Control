@@ -15,7 +15,7 @@ pip install -r requirements.txt
 
 4. I recommend placing the netedit and sumo-gui shortcut in the project root directory, so that you can check out the SUMO files any time you like.
 
-5. Run Simulation.py to start simulation, and screenshots will be saved in `Screenshot/` and vehicle-passing-time will be recorded in `Output/`.
+5. Run `Simulation.py` to start simulation, and screenshots will be saved in `Screenshot/` and vehicle-passing-time will be recorded in `Output/`.
    
 ## Files
 **File Structure:**
