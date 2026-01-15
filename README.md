@@ -2,7 +2,7 @@
 This is a simple project based on SUMO and Python. The project simulates the intersection, and utilizes LLM to optimize specific vehicle actions. By controlling these vehicles with LLM, we aim to shorten the average passing time of all vehicles in the controlled direction. It doesn't involve any complicated model training, only the simplest application of API.
 
 ## Startup
-1. Make sure that you have SUMO installed. I used SUMO-1.19 on my PC. Also, add SUMO path to your system path. If you are using another version of SUMO, check [here](#files-8)
+1. Make sure that you have SUMO installed. I used SUMO-1.19 on my PC. Also, add SUMO path to your system path. If you are using another version of SUMO, check [config.py](#files-8)
    
 2. Install the packages in `requirements.txt`.
 ```
