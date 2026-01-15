@@ -1,0 +1,195 @@
+<?xml version="1.0" ?>
+<routes>
+	<vType id="v_type" accel="0.8" color="white" decel="4.5" sigma="0.5" length="5" maxSpeed="30"/>
+	<vType id="n_type" accel="0.2" color="blue" decel="4.5" sigma="0.5" length="5" maxSpeed="10"/>
+	<route id="N_N" edges="N -N"/>
+	<route id="N_S" edges="N -S"/>
+	<route id="N_W" edges="N -W"/>
+	<route id="N_E" edges="N -E"/>
+	<route id="S_S" edges="S -S"/>
+	<route id="S_N" edges="S -N"/>
+	<route id="S_W" edges="S -W"/>
+	<route id="S_E" edges="S -E"/>
+	<route id="W_W" edges="W -W"/>
+	<route id="W_N" edges="W -N"/>
+	<route id="W_S" edges="W -S"/>
+	<route id="W_E" edges="W -E"/>
+	<route id="E_E" edges="E -E"/>
+	<route id="E_N" edges="E -N"/>
+	<route id="E_S" edges="E -S"/>
+	<route id="E_W" edges="E -W"/>
+	<vehicle id="W_S_199_vehicle" type="v_type" depart="15" route="W_S" departLane="best"/>
+	<vehicle id="E_W_199_vehicle" type="v_type" depart="15" route="E_W" departLane="best"/>
+	<vehicle id="E_W_3999_vehicle" type="v_type" depart="15" route="E_W" departLane="best"/>
+	<vehicle id="W_E_3799_vehicle" type="v_type" depart="15" route="W_E" departLane="best"/>
+	<vehicle id="E_W_5899_vehicle" type="v_type" depart="15" route="E_W" departLane="best"/>
+	<vehicle id="E_W_3399_vehicle" type="v_type" depart="15" route="E_W" departLane="best"/>
+	<vehicle id="W_E_799_vehicle" type="v_type" depart="16" route="W_E" departLane="best"/>
+	<vehicle id="E_W_1899_vehicle" type="v_type" depart="16" route="E_W" departLane="best"/>
+	<vehicle id="E_W_999_vehicle" type="v_type" depart="16" route="E_W" departLane="best"/>
+	<vehicle id="W_E_4799_vehicle" type="v_type" depart="16" route="W_E" departLane="best"/>
+	<vehicle id="E_S_799_vehicle" type="v_type" depart="16" route="E_S" departLane="best"/>
+	<vehicle id="E_W_5399_vehicle" type="v_type" depart="16" route="E_W" departLane="best"/>
+	<vehicle id="E_W_4799_vehicle" type="v_type" depart="16" route="E_W" departLane="best"/>
+	<vehicle id="W_N_899_vehicle" type="v_type" depart="16" route="W_N" departLane="best"/>
+	<vehicle id="E_W_5299_vehicle" type="v_type" depart="16" route="E_W" departLane="best"/>
+	<vehicle id="W_S_999_vehicle" type="v_type" depart="16" route="W_S" departLane="best"/>
+	<vehicle id="W_S_699_vehicle" type="v_type" depart="16" route="W_S" departLane="best"/>
+	<vehicle id="E_S_299_vehicle" type="v_type" depart="17" route="E_S" departLane="best"/>
+	<vehicle id="W_E_2399_vehicle" type="v_type" depart="17" route="W_E" departLane="best"/>
+	<vehicle id="E_W_499_vehicle" type="v_type" depart="17" route="E_W" departLane="best"/>
+	<vehicle id="E_S_599_vehicle" type="v_type" depart="17" route="E_S" departLane="best"/>
+	<vehicle id="E_W_1599_vehicle" type="v_type" depart="17" route="E_W" departLane="best"/>
+	<vehicle id="W_E_6599_vehicle" type="v_type" depart="18" route="W_E" departLane="best"/>
+	<vehicle id="W_E_999_vehicle" type="v_type" depart="18" route="W_E" departLane="best"/>
+	<vehicle id="W_E_5099_vehicle" type="v_type" depart="18" route="W_E" departLane="best"/>
+	<vehicle id="E_W_099_vehicle" type="v_type" depart="18" route="E_W" departLane="best"/>
+	<vehicle id="E_W_2499_vehicle" type="v_type" depart="18" route="E_W" departLane="best"/>
+	<vehicle id="E_W_1799_vehicle" type="v_type" depart="18" route="E_W" departLane="best"/>
+	<vehicle id="W_E_2799_vehicle" type="v_type" depart="18" route="W_E" departLane="best"/>
+	<vehicle id="W_N_799_vehicle" type="v_type" depart="18" route="W_N" departLane="best"/>
+	<vehicle id="E_W_1199_vehicle" type="v_type" depart="18" route="E_W" departLane="best"/>
+	<vehicle id="W_E_6199_vehicle" type="v_type" depart="18" route="W_E" departLane="best"/>
+	<vehicle id="E_W_4999_vehicle" type="v_type" depart="18" route="E_W" departLane="best"/>
+	<vehicle id="W_S_099_vehicle" type="v_type" depart="18" route="W_S" departLane="best"/>
+	<vehicle id="E_S_099_vehicle" type="v_type" depart="19" route="E_S" departLane="best"/>
+	<vehicle id="E_W_399_vehicle" type="v_type" depart="19" route="E_W" departLane="best"/>
+	<vehicle id="E_W_2399_vehicle" type="v_type" depart="19" route="E_W" departLane="best"/>
+	<vehicle id="E_W_1099_vehicle" type="v_type" depart="19" route="E_W" departLane="best"/>
+	<vehicle id="E_W_1299_vehicle" type="v_type" depart="19" route="E_W" departLane="best"/>
+	<vehicle id="W_E_3699_vehicle" type="v_type" depart="19" route="W_E" departLane="best"/>
+	<vehicle id="W_E_3999_vehicle" type="v_type" depart="19" route="W_E" departLane="best"/>
+	<vehicle id="E_W_2299_vehicle" type="v_type" depart="19" route="E_W" departLane="best"/>
+	<vehicle id="W_E_3899_vehicle" type="v_type" depart="20" route="W_E" departLane="best"/>
+	<vehicle id="E_W_3899_vehicle" type="v_type" depart="20" route="E_W" departLane="best"/>
+	<vehicle id="E_W_5199_vehicle" type="v_type" depart="20" route="E_W" departLane="best"/>
+	<vehicle id="E_N_499_vehicle" type="v_type" depart="20" route="E_N" departLane="best"/>
+	<vehicle id="W_S_599_vehicle" type="v_type" depart="20" route="W_S" departLane="best"/>
+	<vehicle id="W_E_4499_vehicle" type="v_type" depart="20" route="W_E" departLane="best"/>
+	<vehicle id="E_W_599_vehicle" type="v_type" depart="20" route="E_W" departLane="best"/>
+	<vehicle id="E_N_599_vehicle" type="v_type" depart="20" route="E_N" departLane="best"/>
+	<vehicle id="W_E_4599_vehicle" type="v_type" depart="20" route="W_E" departLane="best"/>
+	<vehicle id="E_N_399_vehicle" type="v_type" depart="20" route="E_N" departLane="best"/>
+	<vehicle id="E_S_999_vehicle" type="v_type" depart="20" route="E_S" departLane="best"/>
+	<vehicle id="E_W_3799_vehicle" type="v_type" depart="21" route="E_W" departLane="best"/>
+	<vehicle id="W_E_2899_vehicle" type="v_type" depart="21" route="W_E" departLane="best"/>
+	<vehicle id="W_E_2099_vehicle" type="v_type" depart="21" route="W_E" departLane="best"/>
+	<vehicle id="W_N_699_vehicle" type="v_type" depart="21" route="W_N" departLane="best"/>
+	<vehicle id="E_W_3299_vehicle" type="v_type" depart="21" route="E_W" departLane="best"/>
+	<vehicle id="E_W_4699_vehicle" type="v_type" depart="21" route="E_W" departLane="best"/>
+	<vehicle id="W_E_3499_vehicle" type="v_type" depart="21" route="W_E" departLane="best"/>
+	<vehicle id="E_S_399_vehicle" type="v_type" depart="21" route="E_S" departLane="best"/>
+	<vehicle id="W_E_3599_vehicle" type="v_type" depart="21" route="W_E" departLane="best"/>
+	<vehicle id="E_W_5599_vehicle" type="v_type" depart="21" route="E_W" departLane="best"/>
+	<vehicle id="E_W_3699_vehicle" type="v_type" depart="22" route="E_W" departLane="best"/>
+	<vehicle id="W_E_5299_vehicle" type="v_type" depart="22" route="W_E" departLane="best"/>
+	<vehicle id="W_E_3399_vehicle" type="v_type" depart="22" route="W_E" departLane="best"/>
+	<vehicle id="E_N_999_vehicle" type="v_type" depart="22" route="E_N" departLane="best"/>
+	<vehicle id="E_W_2199_vehicle" type="v_type" depart="22" route="E_W" departLane="best"/>
+	<vehicle id="E_S_499_vehicle" type="v_type" depart="23" route="E_S" departLane="best"/>
+	<vehicle id="E_W_4299_vehicle" type="v_type" depart="23" route="E_W" departLane="best"/>
+	<vehicle id="W_E_5499_vehicle" type="v_type" depart="23" route="W_E" departLane="best"/>
+	<vehicle id="W_E_6399_vehicle" type="v_type" depart="23" route="W_E" departLane="best"/>
+	<vehicle id="W_S_499_vehicle" type="v_type" depart="23" route="W_S" departLane="best"/>
+	<vehicle id="E_W_299_vehicle" type="v_type" depart="23" route="E_W" departLane="best"/>
+	<vehicle id="E_W_6299_vehicle" type="v_type" depart="23" route="E_W" departLane="best"/>
+	<vehicle id="W_E_1599_vehicle" type="v_type" depart="23" route="W_E" departLane="best"/>
+	<vehicle id="W_S_399_vehicle" type="v_type" depart="23" route="W_S" departLane="best"/>
+	<vehicle id="E_W_6599_vehicle" type="v_type" depart="23" route="E_W" departLane="best"/>
+	<vehicle id="E_W_1699_vehicle" type="v_type" depart="24" route="E_W" departLane="best"/>
+	<vehicle id="W_E_1299_vehicle" type="v_type" depart="24" route="W_E" departLane="best"/>
+	<vehicle id="W_E_4399_vehicle" type="v_type" depart="24" route="W_E" departLane="best"/>
+	<vehicle id="W_E_1799_vehicle" type="v_type" depart="24" route="W_E" departLane="best"/>
+	<vehicle id="W_E_4099_vehicle" type="v_type" depart="24" route="W_E" departLane="best"/>
+	<vehicle id="W_E_2999_vehicle" type="v_type" depart="24" route="W_E" departLane="best"/>
+	<vehicle id="E_S_899_vehicle" type="v_type" depart="24" route="E_S" departLane="best"/>
+	<vehicle id="W_N_999_vehicle" type="v_type" depart="24" route="W_N" departLane="best"/>
+	<vehicle id="E_W_6099_vehicle" type="v_type" depart="24" route="E_W" departLane="best"/>
+	<vehicle id="E_W_3099_vehicle" type="v_type" depart="24" route="E_W" departLane="best"/>
+	<vehicle id="W_E_1699_vehicle" type="v_type" depart="25" route="W_E" departLane="best"/>
+	<vehicle id="W_N_499_vehicle" type="v_type" depart="25" route="W_N" departLane="best"/>
+	<vehicle id="W_E_3099_vehicle" type="v_type" depart="25" route="W_E" departLane="best"/>
+	<vehicle id="W_E_4299_vehicle" type="v_type" depart="25" route="W_E" departLane="best"/>
+	<vehicle id="W_E_1999_vehicle" type="v_type" depart="25" route="W_E" departLane="best"/>
+	<vehicle id="W_E_499_vehicle" type="v_type" depart="26" route="W_E" departLane="best"/>
+	<vehicle id="E_S_699_vehicle" type="v_type" depart="26" route="E_S" departLane="best"/>
+	<vehicle id="W_E_899_vehicle" type="v_type" depart="26" route="W_E" departLane="best"/>
+	<vehicle id="W_S_899_vehicle" type="v_type" depart="26" route="W_S" departLane="best"/>
+	<vehicle id="W_E_2599_vehicle" type="v_type" depart="26" route="W_E" departLane="best"/>
+	<vehicle id="E_W_2099_vehicle" type="v_type" depart="26" route="E_W" departLane="best"/>
+	<vehicle id="W_S_799_vehicle" type="v_type" depart="26" route="W_S" departLane="best"/>
+	<vehicle id="W_S_299_vehicle" type="v_type" depart="26" route="W_S" departLane="best"/>
+	<vehicle id="E_W_4599_vehicle" type="v_type" depart="26" route="E_W" departLane="best"/>
+	<vehicle id="W_E_1199_vehicle" type="v_type" depart="26" route="W_E" departLane="best"/>
+	<vehicle id="E_W_1999_vehicle" type="v_type" depart="27" route="E_W" departLane="best"/>
+	<vehicle id="W_E_6299_vehicle" type="v_type" depart="27" route="W_E" departLane="best"/>
+	<vehicle id="W_E_5799_vehicle" type="v_type" depart="27" route="W_E" departLane="best"/>
+	<vehicle id="W_E_199_vehicle" type="v_type" depart="27" route="W_E" departLane="best"/>
+	<vehicle id="W_E_3199_vehicle" type="v_type" depart="27" route="W_E" departLane="best"/>
+	<vehicle id="W_E_5399_vehicle" type="v_type" depart="27" route="W_E" departLane="best"/>
+	<vehicle id="W_E_5599_vehicle" type="v_type" depart="27" route="W_E" departLane="best"/>
+	<vehicle id="W_E_3299_vehicle" type="v_type" depart="28" route="W_E" departLane="best"/>
+	<vehicle id="W_E_5899_vehicle" type="v_type" depart="28" route="W_E" departLane="best"/>
+	<vehicle id="E_W_2799_vehicle" type="v_type" depart="28" route="E_W" departLane="best"/>
+	<vehicle id="W_E_6699_vehicle" type="v_type" depart="28" route="W_E" departLane="best"/>
+	<vehicle id="E_W_6199_vehicle" type="v_type" depart="28" route="E_W" departLane="best"/>
+	<vehicle id="W_E_299_vehicle" type="v_type" depart="28" route="W_E" departLane="best"/>
+	<vehicle id="W_N_599_vehicle" type="v_type" depart="28" route="W_N" departLane="best"/>
+	<vehicle id="E_W_1499_vehicle" type="v_type" depart="29" route="E_W" departLane="best"/>
+	<vehicle id="W_E_4999_vehicle" type="v_type" depart="29" route="W_E" departLane="best"/>
+	<vehicle id="E_W_6699_vehicle" type="v_type" depart="29" route="E_W" departLane="best"/>
+	<vehicle id="W_E_599_vehicle" type="v_type" depart="29" route="W_E" departLane="best"/>
+	<vehicle id="W_E_1099_vehicle" type="v_type" depart="29" route="W_E" departLane="best"/>
+	<vehicle id="W_E_399_vehicle" type="v_type" depart="30" route="W_E" departLane="best"/>
+	<vehicle id="E_W_5999_vehicle" type="v_type" depart="30" route="E_W" departLane="best"/>
+	<vehicle id="W_E_6099_vehicle" type="v_type" depart="30" route="W_E" departLane="best"/>
+	<vehicle id="W_E_699_vehicle" type="v_type" depart="30" route="W_E" departLane="best"/>
+	<vehicle id="E_W_2599_vehicle" type="v_type" depart="30" route="E_W" departLane="best"/>
+	<vehicle id="E_W_1399_vehicle" type="v_type" depart="30" route="E_W" departLane="best"/>
+	<vehicle id="W_E_2299_vehicle" type="v_type" depart="30" route="W_E" departLane="best"/>
+	<vehicle id="W_N_099_vehicle" type="v_type" depart="30" route="W_N" departLane="best"/>
+	<vehicle id="E_W_699_vehicle" type="v_type" depart="30" route="E_W" departLane="best"/>
+	<vehicle id="W_E_6499_vehicle" type="v_type" depart="31" route="W_E" departLane="best"/>
+	<vehicle id="W_E_4899_vehicle" type="v_type" depart="31" route="W_E" departLane="best"/>
+	<vehicle id="E_W_5799_vehicle" type="v_type" depart="31" route="E_W" departLane="best"/>
+	<vehicle id="E_W_3599_vehicle" type="v_type" depart="31" route="E_W" departLane="best"/>
+	<vehicle id="E_N_199_vehicle" type="v_type" depart="31" route="E_N" departLane="best"/>
+	<vehicle id="E_W_3199_vehicle" type="v_type" depart="31" route="E_W" departLane="best"/>
+	<vehicle id="E_N_799_vehicle" type="v_type" depart="31" route="E_N" departLane="best"/>
+	<vehicle id="E_W_4499_vehicle" type="v_type" depart="31" route="E_W" departLane="best"/>
+	<vehicle id="W_E_4199_vehicle" type="v_type" depart="31" route="W_E" departLane="best"/>
+	<vehicle id="W_E_5999_vehicle" type="v_type" depart="31" route="W_E" departLane="best"/>
+	<vehicle id="E_N_699_vehicle" type="v_type" depart="31" route="E_N" departLane="best"/>
+	<vehicle id="E_W_899_vehicle" type="v_type" depart="31" route="E_W" departLane="best"/>
+	<vehicle id="W_E_5699_vehicle" type="v_type" depart="32" route="W_E" departLane="best"/>
+	<vehicle id="E_W_5499_vehicle" type="v_type" depart="32" route="E_W" departLane="best"/>
+	<vehicle id="W_E_1899_vehicle" type="v_type" depart="32" route="W_E" departLane="best"/>
+	<vehicle id="E_W_799_vehicle" type="v_type" depart="32" route="E_W" departLane="best"/>
+	<vehicle id="W_E_5199_vehicle" type="v_type" depart="32" route="W_E" departLane="best"/>
+	<vehicle id="W_N_199_vehicle" type="v_type" depart="32" route="W_N" departLane="best"/>
+	<vehicle id="E_W_2699_vehicle" type="v_type" depart="32" route="E_W" departLane="best"/>
+	<vehicle id="E_W_2899_vehicle" type="v_type" depart="32" route="E_W" departLane="best"/>
+	<vehicle id="W_E_4699_vehicle" type="v_type" depart="32" route="W_E" departLane="best"/>
+	<vehicle id="E_N_099_vehicle" type="v_type" depart="32" route="E_N" departLane="best"/>
+	<vehicle id="E_W_5099_vehicle" type="v_type" depart="32" route="E_W" departLane="best"/>
+	<vehicle id="E_N_899_vehicle" type="v_type" depart="32" route="E_N" departLane="best"/>
+	<vehicle id="E_W_4899_vehicle" type="v_type" depart="32" route="E_W" departLane="best"/>
+	<vehicle id="E_W_3499_vehicle" type="v_type" depart="32" route="E_W" departLane="best"/>
+	<vehicle id="E_W_4399_vehicle" type="v_type" depart="33" route="E_W" departLane="best"/>
+	<vehicle id="W_N_299_vehicle" type="v_type" depart="33" route="W_N" departLane="best"/>
+	<vehicle id="W_E_1499_vehicle" type="v_type" depart="33" route="W_E" departLane="best"/>
+	<vehicle id="E_W_4199_vehicle" type="v_type" depart="33" route="E_W" departLane="best"/>
+	<vehicle id="W_E_099_vehicle" type="v_type" depart="33" route="W_E" departLane="best"/>
+	<vehicle id="W_E_1399_vehicle" type="v_type" depart="33" route="W_E" departLane="best"/>
+	<vehicle id="E_S_199_vehicle" type="v_type" depart="33" route="E_S" departLane="best"/>
+	<vehicle id="E_W_6499_vehicle" type="v_type" depart="34" route="E_W" departLane="best"/>
+	<vehicle id="E_W_2999_vehicle" type="v_type" depart="34" route="E_W" departLane="best"/>
+	<vehicle id="E_W_6399_vehicle" type="v_type" depart="34" route="E_W" departLane="best"/>
+	<vehicle id="W_N_399_vehicle" type="v_type" depart="34" route="W_N" departLane="best"/>
+	<vehicle id="W_E_2499_vehicle" type="v_type" depart="34" route="W_E" departLane="best"/>
+	<vehicle id="E_N_299_vehicle" type="v_type" depart="34" route="E_N" departLane="best"/>
+	<vehicle id="E_W_5699_vehicle" type="v_type" depart="34" route="E_W" departLane="best"/>
+	<vehicle id="W_E_2199_vehicle" type="v_type" depart="34" route="W_E" departLane="best"/>
+	<vehicle id="W_E_2699_vehicle" type="v_type" depart="34" route="W_E" departLane="best"/>
+	<vehicle id="E_W_4099_vehicle" type="v_type" depart="34" route="E_W" departLane="best"/>
+</routes>
