@@ -5,8 +5,9 @@ This is a simple project based on SUMO and Python. The project simulates the int
 1. Make sure that you have SUMO installed. I used SUMO-1.19 on my PC. Also, add SUMO path to your system path.
    
 2. Install the packages in requirements.txt.
->pip install -r requirements.txt
-
+```
+pip install -r requirements.txt
+```
 1. Fill in what is suspended in Major/config.py, including api_key, api_endpoint, model_id and ahk_path. The project is developed based on ChatGPT API, therefore if you want to change the model to your favourite LLM, you will need to do some adjustment:
     
     >1. In Major/Simulation, line 28 and 124, that's where you need to modify according to your ideal LLM. 
