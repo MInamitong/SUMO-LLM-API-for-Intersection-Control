@@ -1,4 +1,5 @@
 # SUMO+LLM API for Intersection Control 
+![Cover](images\screenshot.png "Simulation")
 This is a simple project based on SUMO and Python. The project simulates the intersection, and utilizes LLM to optimize specific vehicle actions. By controlling these vehicles with LLM, we aim to shorten the average passing time of all vehicles in the controlled direction. It doesn't involve any complicated model training, only the simplest application of API.
 
 ## Startup
