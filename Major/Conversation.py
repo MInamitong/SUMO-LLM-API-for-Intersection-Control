@@ -8,8 +8,8 @@ class test_agent(traffic_agent):
     
     def test(self):
         choice = input('What do you want to do?\n\
-                   1: Pick one screenshot and ask the GPT.\n\
-                   2: Enter a prompt and ask the GPT.\n\
+                   1: Pick one screenshot and ask the LLM.\n\
+                   2: Enter a prompt and ask the LLM.\n\
                    3: Exit.\n')
         if choice == '3':
             exit()
@@ -19,13 +19,13 @@ class test_agent(traffic_agent):
                 '(For more information about available screenshots, '
                 'please refer to directory Screenshot ) '))
             image_path = (f"Screenshot/screenshot_{self.selected_step}.jpg")
-            base64_image = testor.encode_image(image_path)
-            Prompt = template.format(vehicle_speed = testor.ctrl_veh_speed)    
-            testor.test_the_gpt(Prompt, base64_image = base64_image)
+            base64_image = self.encode_image(image_path)
+            Prompt = template.format(vehicle_speed = self.ctrl_veh_speed)    
+            self.test_the_gpt(Prompt, base64_image = base64_image)
         elif choice == '2':
             Prompt = input('Please enter your prompt: ')
             base64_image = None
-            testor.test_the_gpt(Prompt, base64_image=base64_image)
+            self.test_the_gpt(Prompt, base64_image=base64_image)
         else:
             print("Invalid choice. Please enter 1, 2, or 3.")
     

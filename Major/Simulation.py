@@ -256,12 +256,12 @@ class traffic_agent:
             # Condition: only when step is a multiple of 5 and controlled vehicles are present do we call the LLM
             if key_frame and has_ctrl_veh:
                 print('开始LLM控制')
-                if bunch_num:
-                    gap_satisfied = self.step - original_step >= bunch_num
+                if batch_num:
+                    gap_satisfied = self.step - original_step >= batch_num
                     print(f'当前仿真步数为{self.step}, 受控车辆出场步数为{original_step}, 是否满足图片间隔条件：{gap_satisfied}')
                     if gap_satisfied:
                         # batch encode images
-                        base64_images = self.encode_images(self.storage_sites[-bunch_num:])
+                        base64_images = self.encode_images(self.storage_sites[-batch_num:])
                         print(f'图片批量编码完成，当前图片数量为{len(base64_images)}')
                         # get LLM reply
                         reply = self.chat_with_gpt(base64_images)
@@ -362,9 +362,10 @@ if __name__ == '__main__':
     sumo_agent.time_calculation()
     sumo_agent.save_visualize(folder_path, folder_name, mode="有控制")
     
-    from Test_Runner import simu_runner
-    runner = simu_runner()
-    runner.run_the_simulation()
-    runner.time_calculation()
-    runner.save_visualize(folder_path, folder_name, mode="无控制")
+    #For comparison purpose, run the simulation without LLM control
+    # from Test_Runner import simu_runner
+    # runner = simu_runner()
+    # runner.run_the_simulation()
+    # runner.time_calculation()
+    # runner.save_visualize(folder_path, folder_name, mode="无控制")
 

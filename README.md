@@ -8,11 +8,12 @@ This is a simple project based on SUMO and Python. The project simulates the int
 ```
 pip install -r requirements.txt
 ```
-1. Fill in what is suspended in Major/config.py, including api_key, api_endpoint, model_id and ahk_path. The project is developed based on ChatGPT API, therefore if you want to change the model to your favourite LLM, you will need to do some adjustment:
+3. Fill in what is suspended in Major/config.py, including api_key, api_endpoint and model_id. The project is developed based on ChatGPT API, therefore if you want to change the model to your favourite LLM, you will need to do some adjustment:
     
     >1. In Major/Simulation, line 28 and 124, that's where you need to modify according to your ideal LLM. 
     >2. In Major/Conversation, line 42, that's another script needs to be modified. 
-2. I recommend placing the netedit and sumo-gui shortcut in the project root directory, so that you can check out the SUMO files any time you like.
+
+4. I recommend placing the netedit and sumo-gui shortcut in the project root directory, so that you can check out the SUMO files any time you like.
    
 ## Files
 **File Structure:**
@@ -46,8 +47,28 @@ project/
 
     Notice that we have set 2 types of screenshot methods in **Simulation.py**. Screen_shot (line 55) grabs the SUMO GUI window, but has some confliction with independent GPU. Screen_shot_2 (line 75) shows no GPU issues, but your cursor will also appear in the screenshot, and the SUMO GUI window must remain on top.
 
-4. **Screenshot** storages the screenshorts of simulation.
+4. **Screenshot/** storages the screenshorts of simulation.
 
-5. **Output** storages the results, which will be mean passing time of all vehicles on controlled directions.
+5. **Output/** storages the results, which will be mean passing time of all vehicles on controlled directions.
+
+6. **Conversation.py** is for raw conversation with LLM, but you can choose whether to include pictures or not. You can use this to test your prompt.
+
+7. **Test_Runner.py** is to run the simulation without any LLM control. It's for pure simulation.
+
+8. **config.py** stores your api_key, api_endpoint and model_id. Enter your tokens, url and chosen model here.      
+   
+    If you are using another version of SUMO, or another .sumocfg file, don't forget to rewrite **target_title**. This variable designates the window for screenshot during simulation, therefore you need to <u>rewrite "1.19.0" to your SUMO version and "intersection.sumocfg" to your .sumocfg file name</u>.      
+
+    Other variables:  
+       
+    ```
+    screenshot_storage: Path to save screenshots
+    ctrl_veh_list: Controlled vehicles' IDs, same as those in intersection.rou.xml.
+    simu_len: Maximum simulation steps.
+    batch_num: Number of photos entered in each conversation.
+    ```
+
+
+
 
 

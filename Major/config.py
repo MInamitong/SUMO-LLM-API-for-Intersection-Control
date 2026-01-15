@@ -8,16 +8,12 @@ api_key : str = ""
 api_endpoint : str = ""
 # Model type
 model_id : str = ""
-# Path to AutoHotkeyUX.exe
-ahk_path : str = "Path_to_your_AutoHotkeyUX.exe"
 
 
-# Set script path
-script_path : str = "Tracking.ahk"
 # SUMO configuration file path
 sumo_cfg_file : str =r"..\intersection.sumocfg"
 # Window title for screenshot capture
-target_title : str = 'new.sumocfg - SUMO 1.19.0'
+target_title : str = 'intersection.sumocfg - SUMO 1.19.0'
 
 # Add SUMO libraries to Python module search path
 if 'SUMO_HOME' in os.environ:
@@ -26,6 +22,17 @@ if 'SUMO_HOME' in os.environ:
 else:
     sys.exit("please declare environment variable 'SUMO_HOME'")
     
+    
+# Screenshot storage location
+screenshot_storage="Screenshot/screenshot_{step}.jpg"
+# Controlled vehicle IDs
+ctrl_veh_list = ['Car_0', 'Car_1','Car_2']
+# Simulation duration (in steps)
+simu_len = 500
+# Number of input images
+batch_num = 3
+
+
 # Model prompt/instructions
 template = (
     "Role: Traffic control expert for unsignalized intersections.\n"
@@ -70,12 +77,3 @@ template = (
     "No other output"
 )
 # Calculate according to certain logic, similar to car-following model
-
-# Screenshot storage location
-screenshot_storage="Screenshot/screenshot_{step}.jpg"
-# Controlled vehicle IDs
-ctrl_veh_list = ['Car_0', 'Car_1','Car_2']
-# Simulation duration (in steps)
-simu_len = 500
-# Number of input images
-bunch_num = 3
